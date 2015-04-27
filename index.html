@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 3 - Part 2 - Patrick Levy</title>
+  <script src="jscode.js"></script>
+</head>
+<body>
+  <section>
+    <h1>Recent Gists from GitHub</h1>
+    <h3>Select the Gists that you would like to view:</h3>
+    <div>
+      <label>Python</label>
+      <input type="checkbox" name="python" checked>
+    </div>
+    <div>
+      <label>JSON</label>
+      <input type="checkbox" name="json" checked>
+    </div>
+    <div>
+      <label>JavaScript</label>
+      <input type="checkbox" name="javascript" checked>
+    </div>
+    <div>
+      <label>SQL</label>
+      <input type="checkbox" name="sql" checked>
+    </div>
+    <div>
+      <label>Number of pages of Gists to display</label>
+        <input type="radio" name="pages" value=1 checked>1
+		<input type="radio" name="pages" value=2>2
+		<input type="radio" name="pages" value=3>3
+		<input type="radio" name="pages" value=4>4
+		<input type="radio" name="pages" value=5>5
+    </div>
+    <div>
+      <input type="button" value="Search Gists" onclick="getGists()">
+    </div>
+  </section>
+  <section>
+    <h3>Favorites</h3>
+    <ul id="gist-favorites" style="list-style-type:none">
+    </ul>
+  </section>
+  <section>
+    <h3>Search Results</h3>
+    <div>
+      <input type="button" value="Add Checked Items to Favorites" onclick="addToFavorites()">
+    </div>
+    <ul id="gist-list" style="list-style-type:none">
+    </ul>
+</body>
